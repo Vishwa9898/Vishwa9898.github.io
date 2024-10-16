@@ -1,0 +1,76 @@
+
+h1{
+    font-family: fantasy;
+    color: brown;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section{
+    width: 30%;
+    padding-left: 10px;
+    border: 2px solid black;
+    margin-right: 20px;
+    background-color: #FFF1F5;
+}
+
+.item_title{
+    text-align: center;
+    margin-left: 75%;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.item_description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin-top: auto;
+}
+
+#first_item .item_title{
+    color:black;
+    background-color:#FBCEB1;
+}
+
+#second_item .item_title{
+    color:brown;
+    background-color:#B1DDC9;
+}
+
+#third_item .item_title{
+    color:aliceblue;
+    background-color: #6CD0D0;
+}
+
+
+/* Desktop View - 992px and above */
+@media (min-width: 992px) {
+    section {
+        width: 30%; /* Each section takes up equal width */
+    }
+}
+
+/* Tablet View - between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 43%; /* First two sections take up half of the width */
+    }
+
+    /* Last section takes up full width */
+    section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile View - 767px and below */
+@media (max-width: 767px) {
+    section {
+        width: 100%; /* Each section takes up the full width */
+    }
+}
